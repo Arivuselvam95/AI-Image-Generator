@@ -41,6 +41,12 @@ const App = () => {
       });
   };
 
+  const handleEnter= async (e)=>{
+    if(e.key=='Enter'){
+      await handleInput();
+    }
+  }
+
   return (
     <div className="ai-image-generator">
       <div className="header">
@@ -49,7 +55,7 @@ const App = () => {
       <div className="image-loading">
         {loading?<img src={loadgif} alt="Generated" />:<img src={imageUrl !== "" ? imageUrl : image} alt="Generated" />}
       </div>
-      <div className="search-box">
+      <div onKeyDown={handleEnter} className="search-box">
         <input
           onChange={(e) => setInputTxt(e.target.value)}
           value={inputTxt}
@@ -57,7 +63,7 @@ const App = () => {
           className="search-input"
           placeholder="Describe the image to generate"
         />
-        <div className="generate-btn" onClick={handleInput}>
+        <div  className="generate-btn" onClick={handleInput}>
           Generate
         </div>
       </div>
