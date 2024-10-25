@@ -26,7 +26,8 @@
 @keyframes blink {
     20%,
     24%,
-    55% {
+    55%,
+    60% {
      
       text-shadow: none;
     }
@@ -83,7 +84,6 @@
 }
 .search-input{
     border:none;
-   
     border-radius: 50px;
     width: 500px;
     padding: 10px;

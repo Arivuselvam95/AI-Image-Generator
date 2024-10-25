@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import image from './assets/AI_image.png';
-import loadgif from './assets/load.gif'
+import loadgif from './assets/load-1110_256.gif'
 import './App.css';
 
 const App = () => {
