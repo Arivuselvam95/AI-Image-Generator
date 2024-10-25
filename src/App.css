@@ -1,0 +1,96 @@
+.ai-image-generator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/premium-photo/black-brick-wall-background-rough-concrete-with-neon-lights-glowing-lights-lighting-effect_826551-196.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.header{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+.image-loading{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.image-loading img{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+.image-loading img:hover{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(45, 45, 45, 0.997);
+    width: 260px;
+    height: 260px;
+    cursor: pointer;
+
+    
+}
+.search-box{
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 10px;
+    gap: 20px;
+}
+.search-input{
+    border:none;
+   
+    border-radius: 50px;
+    width: 500px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.generate-btn{
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    background-image: linear-gradient(to right,#e052a0,#f15c41);
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    height: 36px;
+    line-height: 36px;
+    padding: 5px 7px;
+    font-size: 18px;
+    margin-right: 0;
+}
+.generate-btn:hover {
+    background-image: linear-gradient(to right,#3ec7e0,#526bf4);
+}
+@media (max-width:450px) {
+    .header{
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+    .search-box{
+        flex-direction: column;
+    }
+    .search-input{
+        border:none;
+        border-radius: 50px;
+        width: 80vw;
+        padding: 7px;
+        font-size: 1rem;
+    }
+}
