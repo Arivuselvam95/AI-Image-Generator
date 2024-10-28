@@ -53,7 +53,9 @@ const App = () => {
         AI image <span>Generator</span>
       </div>
       <div className="image-loading">
-        {loading?<img src={loadgif} alt="Generated" />:<img src={imageUrl !== "" ? imageUrl : image} alt="Generated" />}
+        {loading?<img src={loadgif} alt="Generated" />:<a href={imageUrl} download="generated_image.png">
+            <img src={imageUrl !== "" ? imageUrl : image} alt="Generated" />
+          </a>  }
       </div>
       <div onKeyDown={handleEnter} className="search-box">
         <input
@@ -66,7 +68,9 @@ const App = () => {
         <div  className="generate-btn" onClick={handleInput}>
           Generate
         </div>
+
       </div>
+      <div className='bottom'>Click image to download</div>
     </div>
   );
 };
